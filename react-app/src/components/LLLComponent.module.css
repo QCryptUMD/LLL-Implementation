@@ -1,0 +1,207 @@
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0 20px;
+  overflow: auto;
+}
+
+.parameters {
+  display: flex;
+  flex-direction: column;
+  background-color: #d3d3d3;
+  margin: 30px 0;
+  padding: 15px 40px 40px 40px;
+  border: 1px solid #d3d3d3;
+  border-radius: 25px;
+}
+
+.parameterInput {
+  border: 1px solid #d3d3d3;
+  border-radius: 20px;
+  margin: 20px;
+  width: 200px;
+  padding: 5px 10px;
+  text-align: center;
+}
+
+.vectorInput {
+  border: 1px solid #d3d3d3;
+  border-radius: 20px;
+  margin: 10px;
+  width: 100px;
+  padding: 5px 10px;
+  text-align: center;
+}
+
+.vectorContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.vector {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+textarea,
+input:focus {
+  outline: 1px solid #939393;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.label {
+  text-align: start;
+  width: 200px;
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.buttons {
+  align-self: center;
+  margin: 40px 0 0 0;
+  width: 30%;
+  min-width: 400px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.submitButton {
+  width: 180px;
+  background-color: green;
+  color: white;
+  border-radius: 20px;
+  border: 1px solid green;
+  padding: 10px 20px;
+  transition: all 0.25s ease;
+}
+
+.submitButton:hover {
+  cursor: pointer;
+  background-color: #279f27;
+  border: 1px solid #279f27;
+  box-shadow: 0 10px 20px -10px #279f27;
+  transform: translateY(-5px);
+}
+
+.clearButton {
+  width: 180px;
+  background-color: red;
+  color: white;
+  border-radius: 20px;
+  border: 1px solid red;
+  padding: 10px 20px;
+  transition: all 0.25s ease;
+}
+
+.clearButton:hover {
+  cursor: pointer;
+  background-color: #ff4b4b;
+  border: 1px solid #ff4b4b;
+  box-shadow: 0 10px 20px -10px #ff4b4b;
+  transform: translateY(-5px);
+}
+
+.error {
+  height: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: top;
+  justify-content: center;
+  font-weight: 700px;
+  color: red;
+  margin-bottom: 10px;
+}
+
+.vectorTextContainer {
+  width: 100%;
+  min-width: 440px;
+  padding: 0 20px;
+  margin: 40px 0 0 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.vectorText {
+  max-width: 60vw;
+  min-width: 480px;
+  min-height: 160px;
+  border: 1px solid gray;
+  border-radius: 20px;
+  padding: 10px 20px;
+}
+.vectorText::-webkit-scrollbar {
+  display: none;
+}
+
+.vectorLabel {
+  width: 221px;
+  text-align: start;
+}
+
+.helpBoxContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.helpBox {
+  text-align: right;
+  font-size: 0.8rem;
+  margin: 0 5px 5px 0;
+  cursor: pointer;
+  color: #0645ad;
+  padding: 10px 0 5px 10px;
+  background: none;
+  border: none;
+}
+
+.spinner:before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  margin-top: -10px;
+  margin-left: -10px;
+  border-radius: 50%;
+  border-top: 2px solid #07d;
+  border-right: 2px solid transparent;
+  animation: spinner 0.6s linear infinite;
+}
+
+@keyframes spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .content {
+    justify-content: start;
+  }
+}
